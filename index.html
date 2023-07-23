@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="container__main_header">Сервис комментариев </h1>
+
+    <div class="container__items">
+      <div class="container__form">
+
+        <form>
+          <label>Показать ваше имя?</label>
+          <input type="radio" id="yes" name="showName" checked>
+          <label for="horns">Да</label>
+          <input type="radio" id="no" name="showName">
+          <label for="horns">Нет</label><br>
+          <label for="username">Введите ваше имя:</label>
+          <input type="text" id="username" class="container__input"><br>
+          <label for="link">Введите ссылку вашего аватара:</label><br>
+          <input type="text" id="link" class="container__input"><br>
+          <label for="textarea">Оставьте ваш комментарий:</label><br>
+          <textarea id="textarea" class="container__textarea" required></textarea>
+        </form>
+      </div>
+      <div id="container__chat">
+        <h2 class="container__chat_header">Чат</h2>
+        <div class="container__user__info"></div>
+      </div>
+    </div>
+    <div class="submit__button">
+      <button id="button">Отправить</button>
+    </div>
+  </div>
+  <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>
