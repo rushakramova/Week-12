@@ -35,9 +35,7 @@ function addChat(event) {
 
     //Очищение комментария от стоп-слов
     const clearComment = (text) => {
-        text = text.replace(/viagra/i, '***');
-        text = text.replace(/xxx/i, '***');
-        return text;
+        return text.replaceAll(/viagra|xxx/ig, '***');
     };
 
     //Присвоение правильного значения комментарию
